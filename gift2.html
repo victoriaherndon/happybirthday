@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Gift, Just Gandalf</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="gandalf-mode">
+    
+    <h1>No Gift, Just Gandalf.</h1>
+    <p class="cute-message">You died.</p>
+
+    <div class="images">
+        <img src="gandalf.png" alt="Gandalf">
+    </div>
+
+    <button class="back-btn" onclick="goBack()">⬅ Back</button>
+
+    <script>
+        
+        function goBack() {
+            window.history.back();
+        }
+
+        
+        let badSound = new Audio("bad.mp3");
+        badSound.play();
+    </script>
+
+</body>
+</html>
